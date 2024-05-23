@@ -1,42 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navbar Burger Example</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
+
 <body>
     <nav class="navbar">
-        <div class="container">
-            <img src="https://media.licdn.com/dms/image/C4E0BAQGmijz0MgGERA/company-logo_200_200/0/1630598613699?e=2147483647&v=beta&t=Zavw-Z3EIZZ2W9GLFDp_zaGlV0mu5OdgIw6CXjlVgE8" alt="logo">
-            <button class="navbar-toggler" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="navbar-collapse">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
-                    <li class="nav-item"><a class="nav-link disabled" href="#">Disabled</a></li>
-                </ul>
-            </div>
+        <a href="#" class="logo">
+            <img width="100px" height="100px" src="https://media.licdn.com/dms/image/C4E0BAQGmijz0MgGERA/company-logo_200_200/0/1630598613699?e=2147483647&v=beta&t=Zavw-Z3EIZZ2W9GLFDp_zaGlV0mu5OdgIw6CXjlVgE8" alt="logo">
+        </a>
+        <button class="navbar-toggler" onclick="toggleMenu()">
+            <span class="navbar-toggler-icon">☰</span>
+        </button>
+        <div class="navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Disabled</a></li>
+            </ul>
         </div>
     </nav>
 
     <div class="banner">
         <div class="banner-content">
             <div class="text-background">
-                <h1>Welcome to our website</h1>
-                <p>Your slogan here</p>
+                <h1>Bienvenido</h1>
+                <p>Slogan</p>
             </div>
         </div>
     </div>
 
-    <section class="servicio">
-        
+    <section>
+        <div class="nuestraEmpresa">
+            <h2>Nuestra compañia</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui consequuntur a iure totam magnam itaque non
+                adipisci nam possimus quaerat autem nihil neque magni at atque saepe, voluptatibus dignissimos quasi.
+            </p>
+        </div>
+
+        <div class="nuestroServicio">
+            <h2>Nuestros servicios</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui consequuntur a iure totam magnam itaque non
+                adipisci nam possimus quaerat autem nihil neque magni at atque saepe, voluptatibus dignissimos quasi.
+            </p>
+        </div>
+
+        <div class="grid">
+            <div>
+                <article class="card">
+                    <h2>carta 1</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, eum eveniet. Et voluptatem quo
+                        deleniti quisquam vitae molestias quasi inventore, eligendi dicta corrupti aspernatur? Error
+                        inventore saepe reiciendis veniam rerum!</p>
+                </article>
+            </div>
+            <div>
+                <article class="card">
+                    <h2>carta 2</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, animi, necessitatibus asperiores
+                        sapiente laboriosam ducimus voluptatem tempora, odio natus possimus mollitia quod sit cum
+                        adipisci numquam! Eaque ut enim atque.</p>
+                </article>
+            </div>
+            <div>
+                <article class="card">
+                    <h2>carta 3</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, eum eveniet. Et voluptatem quo
+                        deleniti quisquam vitae molestias quasi inventore, eligendi dicta corrupti aspernatur? Error
+                        inventore saepe reiciendis veniam rerum!</p>
+                </article>
+            </div>
+           
+            <div>
+                <article class="card">
+                    <h2>carta 4</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, animi, necessitatibus asperiores
+                        sapiente laboriosam ducimus voluptatem tempora, odio natus possimus mollitia quod sit cum
+                        adipisci numquam! Eaque ut enim atque.</p>
+                </article>
+            </div>
+
+            <div>
+                <article class="card">
+                    <h2>carta 5</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, animi, necessitatibus asperiores
+                        sapiente laboriosam ducimus voluptatem tempora, odio natus possimus mollitia quod sit cum
+                        adipisci numquam! Eaque ut enim atque.</p>
+                </article>
+            </div>
+
+            <div>
+                <article class="card">
+                    <h2>carta 6</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, animi, necessitatibus asperiores
+                        sapiente laboriosam ducimus voluptatem tempora, odio natus possimus mollitia quod sit cum
+                        adipisci numquam! Eaque ut enim atque.</p>
+                </article>
+            </div>
+        </div>
     </section>
 
-    <script src="index.js"></script>
+    <script src="../js/index.js"></script>
 </body>
+
 </html>
