@@ -8,6 +8,12 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 .navbar {
   background-color: #f8f9fa;
   padding: 0.5rem 1rem;
@@ -15,6 +21,10 @@ body {
   justify-content: space-between;
   align-items: center;
   position: relative;
+}
+
+.logo {
+  margin-left: 70px;
 }
 
 .container {
@@ -211,6 +221,7 @@ body {
     width: 100%;
     text-align: center;
   }
+
   .footer-content{
     display: grid;
     grid-template-columns: 1fr;
@@ -218,33 +229,66 @@ body {
     min-height: 120vh;
     margin: 0;
   }
+
   .footer-content div{
     margin: 0;
   }
 }
 
+footer {
+  width: 100%;
+}
+
 /* parte de imagen con bienvenida */
 .banner {
-  background: url("https://assets.turismoentren.com/gallery/blog/tren-historico-de-vapor-b.jpg")
+  background: url("../assets/daniel-abadia-Njq3Nz6-5rQ-unsplash.jpg")
     no-repeat center center;
-  background-size: cover;
+  background-size: 100% 100%; /* Modificado aquí */
   width: 100%;
   height: 100vh;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: center;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   padding: 0 20px 20px 0;
 }
 
 .banner-content {
   text-align: left;
+  margin-top: 200px;
 }
 
 .text-background {
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 20px;
+  padding: 0 200px;
   color: white;
+}
+
+.text-background h1 {
+  font-size: 5rem;
+}
+
+.text-background p {
+  font-size: 2rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .banner-content {
+    margin-top: 100px;
+  }
+
+  .text-background {
+    padding: 0 50px;
+  }
+
+  .text-background h1 {
+    font-size: 3rem;
+  }
+
+  .text-background p {
+    font-size: 1.5rem;
+  }
 }
 
 /* section de servicio */
@@ -374,13 +418,15 @@ section {
   align-items: center;
   gap: 10px;
   border-radius: 12px;
-  padding: 30px 30px 50px; /* Reduced padding */
-  background: red;
-  font-size: 100%; /* Reduced font-size */
+  padding: 30px 30px 50px; 
+  background: rgba(128, 128, 128, 0.528);
+  font-size: 100%; 
+  border: 5px solid red; 
 }
 
-.primary {
-  order: -1;
+.card img {
+  width: 100%;
+  height: 10vh;
 }
 
 .grid {
@@ -396,11 +442,6 @@ section {
 }
 
 @media (width >= 768px) {
-  /* body {
-      height: 100vh;
-      padding: 60px 20px;
-    } */
-
   .grid {
     grid-template-rows: 1fr 1fr;
     grid-template-columns: repeat(2, 1fr);
@@ -408,20 +449,6 @@ section {
 
   .grid > div {
     height: 100%;
-  }
-
-  .primary {
-    order: -1;
-    grid-column: 1 / 3;
-  }
-
-  .primary .card {
-    max-width: 20vw;
-    margin: 0 auto;
-  }
-
-  .background {
-    top: -25vh;
   }
 }
 
@@ -433,15 +460,6 @@ section {
 
   .grid > div {
     height: auto;
-  }
-
-  .primary {
-    order: 0;
-    grid-column: auto;
-  }
-
-  .background {
-    top: -100px;
   }
 }
 
