@@ -423,6 +423,7 @@ section {
   background: rgba(128, 128, 128, 0.528);
   font-size: 100%; 
   border: 5px solid transparent red; 
+  box-shadow: 0 10px 20px rgba(83, 83, 83, 0.528), 0 6px 6px rgba(83, 83, 83, 0.528);
 }
 
 .card img {
